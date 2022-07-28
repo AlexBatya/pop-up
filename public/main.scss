@@ -1,0 +1,22 @@
+@mixin text($faily,$style,$weight,$size,$height,$color) {
+    font-family: $faily;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    color: $color; 
+}
+    // @include text('Roboto',normal,400,20px,23px,#FFFFFF);
+
+.container{
+    width: 1215px;
+    margin: auto;
+    padding: 0 15px;
+    background: #C0DBD9;
+    height: 1000px;
+//    & .ras{
+//     width: 1215px;
+//     margin: auto;
+//     color: red;
+//    } 
+}
