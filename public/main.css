@@ -5,4 +5,9 @@
   background: #C0DBD9;
   height: 1000px;
 }
+
+.container .block1 {
+  background: #7FAFF7;
+  min-height: 100px;
+}
 /*# sourceMappingURL=main.css.map */
