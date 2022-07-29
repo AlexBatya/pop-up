@@ -6,14 +6,43 @@
     line-height: $height;
     color: $color; 
 }
-    // @include text('Roboto',normal,400,20px,23px,#FFFFFF);
+// pop-up
+.popa{
+    background-color: black;
+    opacity: 0.7;
+    position: relative;
+    & .cardPop{
+        position: absolute;
+        left: 25%;
+        top: 25%;
+        background-color: white;
+        width: 600px;
+        height: 600px;
+        border-radius: 5%;
 
+        display: grid;
+        grid-template-columns: repeat(20,5%);
+        grid-template-rows: repeat(20,5%);
+        & button{
+            @include text('Roboto',normal,400,20px,23px,#FFFFFF);
+            background-color: #7FAFF7;
+            border: solid 1px #A5C7F9;
+            border-radius: 5%;
+            grid-area: 2/19;
+        }
+        & button:hover{
+            background-color: #62a1ff;
+        }
+    }
+}
+
+// ___________________________
 .container{
     width: 1200px;
     margin: auto;
     padding: 0 15px;
     background: #C0DBD9;
-    height: 1000px;
+    min-height: 1000px;
     & header{
         background: #7FAFF7;
         min-height: 100px;
@@ -40,6 +69,7 @@
         min-height: 411px;
         background-color: #B3F95A;
         gap: 15px;
+        margin-bottom: 15px;
         & .card{
             @include text('Roboto',normal,400,53px,62px,#FFFFFF);
             border: solid 1px #8AD191; 
@@ -65,6 +95,9 @@
             width: 255px;
         }
     }
-    
+    & footer{
+        background: #7FAFF7;
+        min-height: 100px;
+    }
 
 }

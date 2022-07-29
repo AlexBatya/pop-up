@@ -1,9 +1,50 @@
+.popa {
+  background-color: black;
+  opacity: 0.7;
+  position: relative;
+}
+
+.popa .cardPop {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  background-color: white;
+  width: 600px;
+  height: 600px;
+  border-radius: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (5%)[20];
+      grid-template-columns: repeat(20, 5%);
+  -ms-grid-rows: (5%)[20];
+      grid-template-rows: repeat(20, 5%);
+}
+
+.popa .cardPop button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  background-color: #7FAFF7;
+  border: solid 1px #A5C7F9;
+  border-radius: 5%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 19;
+  grid-area: 2/19;
+}
+
+.popa .cardPop button:hover {
+  background-color: #62a1ff;
+}
+
 .container {
   width: 1200px;
   margin: auto;
   padding: 0 15px;
   background: #C0DBD9;
-  height: 1000px;
+  min-height: 1000px;
 }
 
 .container header {
@@ -48,6 +89,7 @@
   min-height: 411px;
   background-color: #B3F95A;
   gap: 15px;
+  margin-bottom: 15px;
 }
 
 .container .blockNumber .card {
@@ -94,5 +136,10 @@
 .container .blockGray .card {
   background-color: #0D89B0;
   width: 255px;
+}
+
+.container footer {
+  background: #7FAFF7;
+  min-height: 100px;
 }
 /*# sourceMappingURL=main.css.map */
