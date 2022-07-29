@@ -34,6 +34,10 @@
   grid-area: 2/2;
 }
 
+.container header button:hover {
+  background-color: #62a1ff;
+}
+
 .container .blockNumber {
   display: -ms-grid;
   display: grid;
@@ -83,10 +87,11 @@
           justify-content: space-between;
   background-color: #88B5BF;
   min-height: 259px;
+  padding: 30px;
+  margin-bottom: 100px;
 }
 
 .container .blockGray .card {
-  padding: 30px;
   background-color: #0D89B0;
   width: 255px;
 }
