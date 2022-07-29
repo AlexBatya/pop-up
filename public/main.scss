@@ -9,13 +9,57 @@
     // @include text('Roboto',normal,400,20px,23px,#FFFFFF);
 
 .container{
-    width: 1215px;
+    width: 1200px;
     margin: auto;
     padding: 0 15px;
     background: #C0DBD9;
     height: 1000px;
-    & .block1{
+    & header{
         background: #7FAFF7;
         min-height: 100px;
+        display: grid;
+        grid-template-columns:2% 18% 80%;
+        grid-template-rows: 33.33% 33.33% 33.33%;
+        margin-bottom: 15px;
+        & button{
+            @include text('Roboto',normal,400,20px,23px,#FFFFFF);
+            background-color: #A5C7F9;
+            border: solid 1px #A5C7F9;
+            min-height: 30px ;
+            border-radius: 5px;
+            grid-area: 2/2;
+        }
+    }
+    & .blockNumber{
+        display: grid;
+        grid-template-columns: 390px 590px 190px;
+        grid-template-rows: 198px 198px;
+        min-height: 411px;
+        background-color: #B3F95A;
+        gap: 15px;
+        & .card{
+            @include text('Roboto',normal,400,53px,62px,#FFFFFF);
+            border: solid 1px #8AD191; 
+            background: #8AD191;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        & .card4{
+            grid-column: 1/3;
+            grid-row: 2;
+        }
+    }
+    & .blockGray{
+        display: flex;
+        justify-content: space-between;
+        background-color: #88B5BF;
+        min-height: 259px ;
+        & .card{ 
+            padding: 30px;
+            // border: solid 1px #0D89B0;
+            background-color: #0D89B0;
+            width: 255px;
+        }
     }
 }
