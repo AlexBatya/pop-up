@@ -22,6 +22,11 @@
         display: grid;
         grid-template-columns: repeat(20,5%);
         grid-template-rows: repeat(20,5%);
+
+        & h1{
+            @include text('Roboto',normal,400,20px,23px,#FFFFFF);
+            grid-area: 15/15/18/18;
+        }
         & button{
             @include text('Roboto',normal,400,20px,23px,#FFFFFF);
             background-color: #7FAFF7;
