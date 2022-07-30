@@ -1,4 +1,4 @@
-const button = document.querySelector('button')
+const button = document.querySelector('.but1')
 const article = document.querySelector('article')
 const header = document.querySelector('header')
 
@@ -10,14 +10,14 @@ button.onclick = function(event) {
     const X =document.querySelector('.X') 
     const popa = document.querySelector('.popa')
         X.onclick = function(event) {
-            popa.querySelector('button').remove()    
+            X.remove()    
             article.classList.remove('popa')
 
         }
-        document.addEventListener('keydown', function(event) {
-            if (event.keyCode == 27) {
-                popa.querySelector('button').remove()    
-                article.classList.remove('popa')
+    document.addEventListener('keydown', function(event) {
+        if (event.keyCode == 27) {
+            popa.querySelector('button').remove()    
+            article.classList.remove('popa')
         }
     });
 }
